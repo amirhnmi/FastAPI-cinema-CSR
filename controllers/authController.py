@@ -19,7 +19,7 @@ hash = Hash()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
-SECRET_KEY = "a4ccf8e58dcc5ebc6ce1637d362c2ced20f4dcc030a3e985c97d7f9dfbe29616"  # openssl rand -hex 32
+SECRET_KEY = "------------"  # openssl rand -hex 32
 ALGORITHM = "HS256"
 token_EXPIRE_MINUTES = 30
 
@@ -34,12 +34,12 @@ def create_token(data: dict, expires_delta: timedelta | None = None):
     return encoded_jwt
 
 conf = ConnectionConfig(
-    MAIL_USERNAME = "mr.arhnmi@gmail.com",
-    MAIL_PASSWORD = "ncxywemnbtswysad",
-    MAIL_FROM = "mr.arhnmi@gmail.com",
-    MAIL_PORT = 587,
-    MAIL_SERVER = "smtp.gmail.com",
-    MAIL_FROM_NAME="arhnmi",
+    MAIL_USERNAME = "************",
+    MAIL_PASSWORD = "**************",
+    MAIL_FROM = "*****************",
+    MAIL_PORT = **********,
+    MAIL_SERVER = "************",
+    MAIL_FROM_NAME="**********",
     MAIL_STARTTLS = True,
     MAIL_SSL_TLS = False,
     USE_CREDENTIALS = True,
